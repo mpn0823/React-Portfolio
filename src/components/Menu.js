@@ -92,7 +92,7 @@ export default ({ setTheme }) => {
     ];
 
     return (
-        <>
+        <div className="z-10">
             {showNav ? (
                 <div className="w-64 h-screen space-x-4">
                     <FontAwesomeIcon
@@ -128,6 +128,6 @@ export default ({ setTheme }) => {
                     />
                 </div>
             )}
-        </>
+        </div>
     );
 };

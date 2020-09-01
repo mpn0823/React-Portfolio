@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 // Components
 import Menu from "./components/Menu";
 import About from "./components/About";
+import Portfolio from "./components/Portfolio";
 
 const lightMode = {
     color: "darkgray",
@@ -33,7 +34,7 @@ const monoGreenMode = {
 };
 
 export default () => {
-    const [mode, setState] = useState("monoGreen");
+    const [mode, setState] = useState("light");
     const theme = () => {
         switch (mode) {
             case "dark":
@@ -55,12 +56,8 @@ export default () => {
         <BrowserRouter>
             <div className="flex justify-center min-h-screen" style={theme()}>
                 <div className="flex container border-l-2 border-r-2 border-current pr-1">
-                    <div className="z-10">
-                        <Menu setTheme={setState} />
-                    </div>
-                    <div>
-                        <About />
-                    </div>
+                    <Menu setTheme={setState} />
+                    <Portfolio />
                 </div>
             </div>
         </BrowserRouter>

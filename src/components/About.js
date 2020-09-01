@@ -2,12 +2,9 @@ import React from "react";
 
 export default () => {
     return (
-        <div className="">
+        <div>
             <h1 className="text-6xl text-center">About Me</h1>
-            <img
-                className="float-right pl-4 pt-4 pr-4"
-                src="https://via.placeholder.com/300x400"
-            />
+
             <p className="text-justify m-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac
